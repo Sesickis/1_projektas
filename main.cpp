@@ -33,15 +33,15 @@ int main () {
                 switch (valiuta) {
                     case 1:
                         rezultatas = kiekis * GBP_Bendras;
-                        cout<<kiekis<<" EUR palyginus su kursu yra "<<fixed<< setprecision(2) <<rezultatas<<" GBP. "<<endl;
+                        cout<<kiekis<<" EUR palyginus yra "<<fixed<< setprecision(2) <<rezultatas<<" GBP. "<<endl;
                         break;
                     case 2:
                         rezultatas = kiekis * USD_Bendras;
-                        cout<<kiekis<<" EUR palyginus su kursu yra "<<fixed<< setprecision(2) <<rezultatas<<" USD. "<<endl;
+                        cout<<kiekis<<" EUR palyginus yra "<<fixed<< setprecision(2) <<rezultatas<<" USD. "<<endl;
                         break;
                     case 3:
                         rezultatas = kiekis * INR_Bendras;
-                        cout<<kiekis<<" palyginus su kursu yra "<<fixed<< setprecision(2) <<rezultatas<<" INR. "<<endl;
+                        cout<<kiekis<<" palyginus yra "<<fixed<< setprecision(2) <<rezultatas<<" INR. "<<endl;
                         break;
                     default:
                         cout<<"Ivedete nepalaikoma valiuta"<<endl;
