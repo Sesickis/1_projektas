@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
 const float GBP_Bendras = 0.8729,
     GBP_Pirkti    = 0.8600,
@@ -16,18 +17,23 @@ int main () {
     float kiekis, rezultatas;
 
     while (true) {
-        cout<<"\n Galimos operacijos su Eurais: 1 - palyginimas su kita valiuta, 2 - pirkimas, 3 - pardavimas.\n"
+        cout<<"\nGalimos operacijos su Eurais: 1 - palyginimas su kita valiuta, 2 - pirkimas, 3 - pardavimas.\n"
               "Pasirinkite operacija:"<<endl;
         cin>>operacija;
-         if (operacija != 1 && operacija != 2 && operacija != 3 )
-             return 0;
+         if (operacija != 1 && operacija != 2 && operacija != 3 ) {
+             cout<<"Nera tokios operacijos"<<endl;
+                 return 0;
+         }
         cout<<"Galimos valiutos: 1 - GBP, 2 - USD, 3 - INR.\n "
         "Pasirinkite valiuta"<<endl;
         cin>>valiuta;
-        if (valiuta != 1 && valiuta != 2 && valiuta != 3 )
+        if (valiuta != 1 && valiuta != 2 && valiuta != 3 ) {
+            cout<<"Nera tokios valiutos"<<endl;
             return 0;
+        }
         cout<<"Iveskite valiutos kieki:"<<endl;
         cin>>kiekis;
+        if (kiekis >0)
         switch (operacija) {
             case 1:
                 switch (valiuta) {
@@ -86,6 +92,10 @@ int main () {
             default:
                 cout<<"Tokios operacijos nera";
         }
+        else {
+            cout<<"Ivedete netinkama skaiciu."<<endl;
+            return 0;
+        }
     }
 }
 
@@ -129,4 +139,4 @@ int main () {
 // Eurą (EUR)
 // Didžiosios Britanijos svarą (GBP)
 // Jungtinių Amerikos Valstijų dolerį (USD)
-// Indijos rupiją (INR);
+// Indijos rupiją (INR)
