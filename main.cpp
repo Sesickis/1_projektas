@@ -68,15 +68,15 @@ int main () {
             case 3:
                 switch (valiuta) {
                     case 1:
-                        rezultatas = kiekis * GBP_Parduoti;
+                        rezultatas = kiekis / GBP_Parduoti;
                         cout<<"Nusipirkote "<<fixed<< setprecision(2) <<rezultatas<<" EUR "<<endl;
                         break;
                     case 2:
-                        rezultatas = kiekis * USD_Parduoti;
+                        rezultatas = kiekis / USD_Parduoti;
                         cout<<"Nusipirkote "<<fixed<< setprecision(2) <<rezultatas<<" EUR "<<endl;
                         break;
                     case 3:
-                        rezultatas = kiekis * INR_Parduoti;
+                        rezultatas = kiekis / INR_Parduoti;
                         cout<<"Nusipirkote "<<fixed<< setprecision(2) <<rezultatas<<" EUR "<<endl;;
                         break;
                 default:
